@@ -14,7 +14,7 @@ from telegram.ext import (
 )
 
 # ВАЖНО: если ты хранишь токен прямо в файле, вставь сюда:
-BOT_TOKEN = "ВСТАВЬ_СЮДА_ТОКЕН"
+BOT_TOKEN = "8069382967:AAHIlwXCyOLlgl4XYgcjlbOSSZllDz4iP4o"
 
 # ---------- Вопросы (картинка опционально) ----------
 @dataclass
@@ -190,4 +190,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
