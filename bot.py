@@ -29,6 +29,12 @@ BOT_TOKEN = "8069382967:AAHIlwXCyOLlgl4XYgcjlbOSSZllDz4iP4o"
 
 # Только админ сможет смотреть статистику и чистить её
 ADMIN_IDS = {111111111}  # <-- замени на свой Telegram user_id (узнаешь через /myid)
+import os
+
+DATABASE_URL = os.environ.get("DATABASE_URL")
+
+if not DATABASE_URL:
+    raise RuntimeError("DATABASE_URL не найден в окружении Railway")
 
 QUIZ_SIZE = 2
 WRONG_PENALTY_MS = 5000  # +5 секунд за ошибку
@@ -938,6 +944,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
