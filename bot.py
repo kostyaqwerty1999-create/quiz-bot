@@ -26,7 +26,6 @@ from telegram.ext import (
 # ==========================================================
 BOT_TOKEN = "8069382967:AAHIlwXCyOLlgl4XYgcjlbOSSZllDz4iP4o"
 # Railway Postgres обычно сам выставляет DATABASE_URL. Если нет — добавь в Variables.
-DATABASE_URL = None  # если хочешь, можно оставить None и брать из окружения ниже
 
 # Только админ сможет смотреть статистику и чистить её
 ADMIN_IDS = {111111111}  # <-- замени на свой Telegram user_id (узнаешь через /myid)
@@ -939,5 +938,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
